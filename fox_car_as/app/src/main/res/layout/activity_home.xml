@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical" >
+    <!-- android:background="#F5F5F5" -->
+    <!-- 首页TOP搜索 -->
+	<RelativeLayout
+		android:background="@color/colorPrimary"
+		android:layout_width="fill_parent"
+		android:layout_height="60dp" >
+
+		<LinearLayout
+			android:id="@+id/btn_left_layout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:paddingLeft="15dp"
+			android:background="@drawable/app_top_bg"
+			android:paddingRight="15dp"
+			>
+
+			<Button
+				android:id="@+id/btn_left"
+				android:padding="5dp"
+				android:layout_width="10sp"
+				android:layout_height="15dp"
+				android:layout_gravity="center_vertical"
+				android:background="@drawable/arrow_left"
+				android:textSize="20sp" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/btn_right_layout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:paddingLeft="15dp"
+			android:paddingRight="15dp"
+
+			android:visibility="invisible" >
+
+			<Button
+				android:id="@+id/btn_right"
+				android:layout_width="14dp"
+				android:layout_height="14dp"
+				android:background="@null"
+				android:clickable="false"
+				android:textSize="20sp" />
+		</LinearLayout>
+
+
+		<TextView
+			android:id="@+id/nav_title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="首页"
+			android:textColor="#fff"
+			android:textSize="25sp"
+			android:layout_centerVertical="true"
+			android:layout_centerHorizontal="true" />
+
+	</RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <com.common.util.VerticalScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:id="@+id/myScrollView" >
+	        <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:orientation="vertical">
+		        <!-- View Pager -->
+			    <RelativeLayout
+			        android:id="@+id/fl_main"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content" 
+			        android:orientation="vertical">
+			        <android.support.v4.view.ViewPager
+			            android:id="@+id/viewpager"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content" />
+			        <LinearLayout
+			            android:id="@+id/ll_point"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="center_horizontal"
+			            android:layout_centerHorizontal="true"
+			            android:layout_marginBottom="5dp"
+			            android:gravity="center"
+			            android:orientation="horizontal"
+			            android:layout_alignBottom="@id/viewpager"
+			            android:src="@drawable/point_gray" />
+			    </RelativeLayout>
+			    <!-- Class部分 -->
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="vertical" 
+			        android:layout_marginTop="5dp"
+			        android:layout_marginBottom="7dp"
+			        android:background="@color/light_gray" >
+			        <LinearLayout
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:orientation="horizontal" >
+
+
+			            <LinearLayout
+			                android:id="@+id/linearLayoutCategory4"
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:orientation="vertical"
+			                android:gravity="center"
+			                android:clickable="true"
+			                android:background="@drawable/layout_item_bg"
+			                android:layout_marginRight="0.5dp"
+			                android:layout_weight="1.0" >
+			                <ImageView
+			                    android:id="@+id/imageviewCategory4"
+			                    android:layout_width="100dp"
+			                    android:layout_height="100dp"
+			                    android:layout_marginTop="16dp"
+			                    android:layout_marginBottom="9dp"
+			                    android:src="@drawable/s0001" />
+
+							<TextView
+								android:id="@+id/textviewName4"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginBottom="16dp"
+								android:text="我要存车"
+								android:textColor="#000"
+
+								android:textSize="22dp" />
+			            </LinearLayout>
+			               <LinearLayout
+			                android:id="@+id/linearLayoutCategory3"
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:orientation="vertical"
+			                android:gravity="center"
+			                android:clickable="true"
+			                android:background="@drawable/layout_item_bg"
+			                android:layout_marginRight="0.5dp"
+			                android:layout_weight="1.0" >
+			                <ImageView
+			                    android:id="@+id/imageviewCategory3"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginTop="16dp"
+			                    android:layout_marginBottom="9dp"
+			                    android:src="@drawable/s0004" />
+			                <TextView
+			                    android:id="@+id/textviewName3"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="16dp"
+								android:text="我的存车"
+								android:textSize="22dp"
+
+								android:textColor="#000" />
+			            </LinearLayout>
+
+			        </LinearLayout>
+			        <LinearLayout
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:orientation="horizontal" >
+						<LinearLayout
+							android:id="@+id/linearLayoutCategory5"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="vertical"
+							android:gravity="center"
+							android:clickable="true"
+							android:background="@drawable/layout_item_bg"
+							android:layout_marginRight="0.5dp"
+							android:layout_weight="1.0" >
+							<ImageView
+								android:id="@+id/imageviewCategory5"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginTop="16dp"
+								android:layout_marginBottom="9dp"
+								android:src="@drawable/s0002" />
+							<TextView
+								android:id="@+id/textviewName5"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginBottom="16dp"
+								android:text="我要租车"
+								android:textSize="22dp"
+								android:textColor="#000" />
+						</LinearLayout>
+						<LinearLayout
+							android:id="@+id/linearLayoutCategory1"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="vertical"
+							android:gravity="center"
+							android:clickable="true"
+							android:background="@drawable/layout_item_bg"
+							android:layout_marginRight="0.5dp"
+							android:layout_weight="1.0" >
+							<ImageView
+								android:id="@+id/imageviewCategory1"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginTop="16dp"
+								android:layout_marginBottom="9dp"
+								android:src="@drawable/s0005" />
+							<TextView
+								android:id="@+id/textviewName1"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginBottom="16dp"
+								android:text="我的租车"
+								android:textSize="22dp"
+
+								android:textColor="#000" />
+						</LinearLayout>
+			            <LinearLayout
+			                android:id="@+id/linearLayoutCategory0"
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:orientation="vertical"
+			                android:gravity="center"
+			                android:clickable="true"
+			                android:background="@drawable/layout_item_bg"
+			                android:layout_marginRight="0.5dp"
+							android:visibility="gone"
+			                android:layout_weight="1.0" >
+			                <ImageView
+			                    android:id="@+id/imageviewCategory0"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginTop="16dp"
+			                    android:layout_marginBottom="9dp"
+			                    android:src="@drawable/s0003" />
+			                <TextView
+			                    android:id="@+id/textviewName0"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="16dp"
+								android:text="意见反馈"
+								android:textSize="22dp"
+
+								android:textColor="#000"/>
+			            </LinearLayout>
+
+
+
+
+			               <LinearLayout
+			                android:id="@+id/linearLayoutCategory2"
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:orientation="vertical"
+			                android:gravity="center"
+			                android:clickable="true"
+			                android:background="@drawable/layout_item_bg"
+			                android:layout_marginRight="0.5dp"
+							   android:visibility="gone"
+			                android:layout_weight="1.0" >
+			                <ImageView
+			                    android:id="@+id/imageviewCategory2"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginTop="16dp"
+			                    android:layout_marginBottom="9dp"
+			                    android:src="@drawable/s0006" />
+			                <TextView
+			                    android:id="@+id/textviewName2"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="16dp"
+			                    android:text="通知公告"
+								android:textSize="22dp"
+
+								android:textColor="#000"/>
+			            </LinearLayout>
+			
+			        </LinearLayout>
+
+
+			    </LinearLayout>
+			    <!-- List View 部分 -->
+			    <!-- android:background="#FAFAFA" -->
+	        </LinearLayout>
+	    </com.common.util.VerticalScrollView>
+	    <LinearLayout
+	        android:id="@+id/linearLayoutHomeLogin"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom"
+	        android:orientation="horizontal"
+	        android:gravity="center_vertical"
+	        android:clickable="true"
+	        android:background="@color/transparent_gray" >
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1" >
+	        </LinearLayout>
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            <!-- android:background=#D9434E -->
+	        </LinearLayout>
+	    </LinearLayout>
+	    
+	
+    </FrameLayout>
+</LinearLayout>

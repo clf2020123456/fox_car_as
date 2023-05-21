@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="home_top">#2498E3</color>
+   <color name="home_biankuang">#1187EE</color>
+   <color name="baise">#ffffffff</color>
+   <color name="home_qianhui">#ff9a9a9a</color>
+   <color name="new_page_button">#ff4ab9f8</color>
+   <color name="new_xiaozi">#ff726e6d</color>
+   <color name="new_my_color">#686666</color>
+   <color name="resutrant">#6c6c6c</color>
+    <color name="datebg">#f2f2f2</color>
+    <color name="new_headertop">#2498E3</color>
+    <color name="bg">#ffffff</color>
+    <color name="white">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_gray">#ffdcdcdc</color>
+    <color name="transparent_gray">#dd888888</color>
+    <color name="light_yellow_bg">#ffe9e6a5</color>
+
+    <color name="appBg">#F6F6F6</color>
+    <color name="colorSend">#FF5A00</color>
+    <color name="colorHui">#ccc</color>
+    <color name="colorWhite">#fff</color>
+
+    <color name="colorPrimary">#FDAD3F</color>
+    <color name="colorPrimaryDark">#FDAD3F</color>
+</resources>

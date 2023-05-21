@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+     <RelativeLayout
+         android:id="@+id/re1"
+         android:layout_width="fill_parent"
+         android:layout_height="50.0dip"
+         android:layout_gravity="center_vertical"
+         android:background="#ff2498e3"
+         android:orientation="horizontal"
+         android:paddingLeft="3.0dip"
+         android:paddingRight="3.0dip" >
+
+         <TextView
+             android:id="@+id/top_back"
+             android:layout_width="50dp"
+             android:layout_height="30dp"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="10dp"
+             android:drawableLeft="@drawable/topback" />
+
+         <TextView
+             android:id="@+id/textView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:layout_gravity="center"
+             android:ellipsize="end"
+             android:gravity="center"
+             android:singleLine="true"
+             android:text="我的发布"
+             android:textColor="#ffffffff"
+             android:textSize="20.0dip" />
+
+         <TextView
+             android:id="@+id/add_new_xd"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:padding="10dp"
+             android:textSize="20sp"
+             android:textColor="@color/bg"
+             android:layout_alignParentRight="true"
+             android:text="发布订单" />
+     </RelativeLayout>
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/searchcontent"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:hint="输入关键词进行搜索" />
+
+        <Button
+            android:id="@+id/searchbtn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:text="搜索" />
+    </LinearLayout>
+     <ListView
+         android:id="@+id/listView1"
+         android:divider="@drawable/cart_listview_gap"
+         android:dividerHeight="3dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" >
+     </ListView>
+    
+
+</LinearLayout>

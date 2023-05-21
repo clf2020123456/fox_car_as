@@ -1,0 +1,4 @@
+# Project exclude paths
+/fox_car_as/.gradle/
+/fox_car_as/app/build/
+/fox_car_as/app/build/intermediates/javac/debug/classes/

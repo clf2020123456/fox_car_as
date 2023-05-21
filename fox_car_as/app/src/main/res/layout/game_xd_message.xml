@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp" >
+
+            <LinearLayout
+                android:id="@+id/btn_left_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:background="@drawable/app_top_bg"
+                android:paddingRight="15dp"
+                >
+
+                <Button
+                    android:id="@+id/btn_left"
+                    android:padding="5dp"
+                    android:onClick="back"
+                    android:layout_width="10sp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/arrow_left"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_right_layout"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="0dp"
+
+                >
+
+                <Button
+                    android:id="@+id/add_new_xd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:background="@null"
+                    android:textStyle="italic|bold"
+                    android:text="添加"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/nav_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="详细信息"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/main_banner" />
+		<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:orientation="horizontal" >
+		        <TextView
+		            android:id="@+id/title1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:padding="10dp"
+                    android:textStyle="italic|bold"
+		            android:text="TextView11111"
+		            android:textColor="#383636"
+		            android:textSize="22sp" />
+		        <TextView
+		            android:id="@+id/zan"
+		            android:layout_width="wrap_content"
+		            android:visibility="gone"
+		            android:layout_height="wrap_content"
+		            android:text="(赞+1)"
+		            android:textColor="#DC143C"
+		            android:textSize="20sp" />
+		        </LinearLayout>
+
+        <TextView
+            android:id="@+id/baochou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="TextView"
+            android:textColor="#383636"
+
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/leixing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="TextView"
+            android:textColor="#383636"
+
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="TextView"
+            android:textColor="#383636"
+
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:gravity="right"
+                android:text="TextView"
+                android:textColor="#383636"
+
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:gravity="right"
+                android:text="TextView"
+                android:textColor="#383636"
+
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutStorage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutSpecView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <ImageView
+                    android:id="@+id/dianzan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:visibility="gone"
+                    android:layout_marginRight="20dip"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/dianzan" />
+                <ImageView
+                    android:id="@+id/pinglun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                         android:layout_marginRight="20dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/pinglun_" />
+                <ImageView
+                    android:id="@+id/shoucang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/shoucang_" />
+            </LinearLayout>
+        </LinearLayout>
+          <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:padding="5dip" >
+                    <TextView
+                        android:id="@+id/textGoodsComments"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dip"
+                        android:text="用户评论"
+                        android:textColor="#6D6D6D"
+                        android:textSize="20dp" />
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/product_detail_new_line" />
+                    <com.common.custom.MyListView
+	                android:id="@+id/goodsCommentsListView"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:divider="@drawable/product_detail_new_line" />
+                </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
